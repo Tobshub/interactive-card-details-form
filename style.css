@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  /* outline: 1px greenyellow;
+  outline-style: solid; */
 }
 html, body {
   margin: 0;
@@ -33,6 +35,7 @@ html, body {
     border-radius: 10px;
     margin-left: calc(100% - 300px);
     top: 30px;
+    box-shadow: 0 1em 1.5em 0 hsla(0, 0%, 0%, 0.233);
   }
 
   .card-cvc {
@@ -56,6 +59,7 @@ html, body {
     color: white;
     overflow: visible;
     z-index: 10;
+    box-shadow: 0 1em 1.5em 0 hsla(0, 0%, 0%, 0.233);
   }  
 
   .big-circle {
@@ -160,5 +164,310 @@ html, body {
 
   .info-form>label>input:focus{
     color: black;
+  }
+}
+@media (min-width:1024px){
+  body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-display{
+    position: relative;
+    width: 33%;
+    height: 100%;
+    background-image: url(./images/bg-main-desktop.png);
+  }
+  .card-back{
+    position: relative;
+    width: 447px;
+    height: 245px;
+    background: url(./images/bg-card-back.png) center;
+    background-size: cover;
+    border-radius: 10px;
+    top: 51%;
+    left: 50%;
+    box-shadow: 0 1em 1.5em 0 hsla(0, 0%, 0%, 0.233);
+  }
+  .card-cvc{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 38%;
+    right: 12%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .card-front{
+    position: absolute;
+    width: 447px;
+    height: 245px;
+    background: url(./images/bg-card-front.png) center;
+    background-size: cover;
+    border-radius: 10px;
+    top: 18%;
+    left: 30%;
+    box-shadow: 0 1em 1.5em 0 hsla(0, 0%, 0%, 0.233);
+    color: white;
+  }
+  .big-circle {
+    position: absolute;
+    top: 20px;
+    left: 6%;
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .small-circle {
+    position: absolute;
+    top: 35px;
+    left: calc(6% + 65px);
+    aspect-ratio: 1;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: transparent;
+  }
+  .card-number-front{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: 30px;
+  }
+  .card-holder-name-front{
+    position: absolute;
+    top: 75%;
+    left: 6%;
+    font-size: 15px;
+  }
+  .card-exp-front{
+    position: absolute;
+    top: 75%;
+    right: 6%;
+    font-size: 15px;
+  }
+
+  .info-form-container {
+    width: 67%;
+    height: 100vh;
+  }
+
+  .info-form {
+    width: calc(100% - 500px);
+    margin: 200px 150px 0 350px;
+
+  }
+  .info-form>label{
+    font-size: 15px;
+    color:hsl(278, 68%, 11%);
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .info-form>label>input {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(270, 3%, 87%);
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    height: 50px;
+    margin-top: 10px;
+  }
+  #cardholder-input, #card-number-input{
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 15px;
+  }
+  #exp-date-month-input, #exp-date-year-input {
+    width: 80px;
+    padding: 0 0 0 15px;  
+    margin: 5px 10px 0 0;
+  }
+  #cvc-input{
+    max-width: 100%;
+    width: calc((1440 / 275) * 100%);
+    padding-left: 23px;
+    margin: 5px 0 0 0;
+  }
+  label[for="exp-date-input"]{
+    float: left;
+  }
+  label[for='cvc-input']{
+    margin-left: 0;
+    float: left;
+  }
+  #info-submit{
+    margin: 25px 0;
+    width: 100%;
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(278, 68%, 11%);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .info-form>label>input:focus, .info-form>label>input:active{
+    color: black;
+    outline: none;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width:1024px){
+  body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-display{
+    position: relative;
+    width: 33%;
+    height: 100%;
+    background-image: url(./images/bg-main-desktop.png);
+  }
+  .card-back{
+    position: relative;
+    width: 300px;
+    height: 160px;
+    background: url(./images/bg-card-back.png) center;
+    background-size: cover;
+    border-radius: 10px;
+    top: 49%;
+    left: 40%;
+    box-shadow: 0 1em 1.5em 0 hsla(0, 0%, 0%, 0.233);
+  }
+  .card-cvc{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 33%;
+    right: 12%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .card-front{
+    position: absolute;
+    width: 300px;
+    height: 160px;
+    background: url(./images/bg-card-front.png) center;
+    background-size: cover;
+    border-radius: 10px;
+    top: 18%;
+    left: 30%;
+    box-shadow: 0 1em 1.5em 0 hsla(0, 0%, 0%, 0.233);
+    color: white;
+  }
+  .big-circle {
+    position: absolute;
+    top: 20px;
+    left: 6%;
+    aspect-ratio: 1;
+    width: 35px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .small-circle {
+    position: absolute;
+    top: 30px;
+    left: calc(6% + 45px);
+    aspect-ratio: 1;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: transparent;
+  }
+  .card-number-front{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: 23px;
+  }
+  .card-holder-name-front{
+    position: absolute;
+    top: 73%;
+    left: 6%;
+    font-size: 12px;
+  }
+  .card-exp-front{
+    position: absolute;
+    top: 73%;
+    right: 6%;
+    font-size: 12px;
+  }
+
+  .info-form-container {
+    width: 67%;
+    height: 100vh;
+  }
+
+  .info-form {
+    width: calc(100% - 200px);
+    margin: 150px 0 0 175px;
+
+  }
+  .info-form>label{
+    font-size: 15px;
+    color:hsl(278, 68%, 11%);
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .info-form>label>input {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(270, 3%, 87%);
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    height: 50px;
+    margin-top: 10px;
+  }
+  #cardholder-input, #card-number-input{
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 15px;
+  }
+  #exp-date-month-input, #exp-date-year-input {
+    width: 80px;
+    padding: 0 0 0 15px;  
+    margin: 5px 10px 0 0;
+  }
+  #cvc-input{
+    max-width: 100%;
+    width: calc((1440 / 275) * 100%);
+    padding-left: 23px;
+    margin: 5px 0 0 0;
+  }
+  label[for="exp-date-input"]{
+    float: left;
+  }
+  label[for='cvc-input']{
+    margin-left: 0;
+    float: left;
+  }
+  #info-submit{
+    margin: 25px 0;
+    width: 100%;
+    height: 50px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(278, 68%, 11%);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .info-form>label>input:focus, .info-form>label>input:active{
+    color: black;
+    outline: none;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
+    border-radius: 5px;
   }
 }

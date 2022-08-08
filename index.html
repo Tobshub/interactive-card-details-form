@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -23,22 +22,22 @@
       <div class="details">
         <p class="card-number-front">0000 0000 0000 0000</p>
         <p class="card-holder-name-front">JANE APPLESEED</p>
-        <p class="card-exp-front">00/00</p>
+        <p class="card-exp-front"><span id='card-front-month'>00</span>/<span id='card-front-year'>00</span></p>
       </div>
     </div>
   </div>
   
   <div class="info-form-container">
     <form class="info-form">
-      <label for="cardholder-input">CARDHOLDER NAME <br><input type="text" placeholder="e.g. Jane Appleseed" name="cardholder" id="cardholder-input" pattern="[A-Za-z]" required /></label>
+      <label for="cardholder-input">CARDHOLDER NAME <br><input type="text" placeholder="e.g. Jane Appleseed" name="cardholder" id="cardholder-input" required /></label>
       <label for="card-number-input">CARD NUMBER <br><input type="text" placeholder="e.g. 1234 5678 9123 0000" name="card-number" id="card-number-input" maxlength="19" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required /></label>
-      <label for="exp-date-input">EXP. DATE (MM/YY) <br><input type="number" placeholder="MM" name="exp-date-month" id="exp-date-month-input" pattern="[0-1]{1}[0-9]{1}" maxlength="2" required />
-      <input type='number' placeholder="YY" id='exp-date-year-input'required maxlength="2"/></label>
+      <label for="exp-date-input">EXP. DATE (MM/YY) <br><input type="number" placeholder="MM" name="exp-date-month" id="exp-date-month-input" maxlength="2" max="12" required />
+      <input type='number' placeholder="YY" min="22" id='exp-date-year-input'required maxlength="2"/></label>
       <label for="cvc-input">CVC <br><input type="number" placeholder="e.g. 123" id="cvc-input" name="cvc" pattern="[0-9]{3}" required maxlength="3" /></label>
       <input type="submit" value="Confirm" id='info-submit'/>
     </form>
   </div>
-  
+  <script src="script.js"></script>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

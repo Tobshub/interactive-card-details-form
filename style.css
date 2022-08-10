@@ -14,7 +14,7 @@ html, body {
 input[type='submit']{
   cursor: pointer;
 }
-body{
+.card-display{
   background-size: cover;
 }
 @media (max-width: 600px) {

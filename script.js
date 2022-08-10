@@ -1,3 +1,4 @@
+sessionStorage.clear();
 const holderNameInput = document.getElementById('cardholder-input');
 const holderName = document.querySelector('.card-holder-name-front');
 

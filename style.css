@@ -498,7 +498,7 @@ input[type='submit']{
   }
 }
 
-#info-submit:hover, #info-submit:active{
+#info-submit:hover, #info-submit:focus{
   background-color: hsl(270, 3%, 87%);
   color: hsl(278, 68%, 11%)
 }

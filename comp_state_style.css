@@ -360,7 +360,7 @@ input[type='submit']{
   }
 }
 
-#continue-button:hover, #continue-button:active {
+#continue-button:hover, #continue-button:focus {
   background-color: hsl(270, 3%, 87%);
   color: hsl(278, 68%, 11%)
 }

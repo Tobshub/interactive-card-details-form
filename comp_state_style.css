@@ -98,50 +98,8 @@ input[type='submit']{
     padding-top: 90px;
   }
 
-  .info-form{
-    width: 100%;
-  }
 
-  .info-form>label{
-    font-size: 15px;
-    color:hsl(278, 68%, 11%);
-    font-weight: 800;
-  }
-
-  .info-form>label>input {
-    font-size: 20px;
-    font-weight: 700;
-    color: hsl(270, 3%, 87%);
-    border-radius: 5px;
-    border: 1px solid hsl(270, 3%, 87%);
-    height: 50px;
-  }
-
-  #cardholder-input, #card-number-input{
-    width: 100%;
-    margin: 5px 0;
-    padding-left: 15px;
-  }
-
-  #exp-date-month-input, #exp-date-year-input {
-    width: 80px;
-    padding-left: 15px;
-    margin: 5px 0;
-  }
-  #cvc-input{
-    width: 160px;
-    padding-left: 15px;
-    margin: 5px 0;
-  }
-  label[for="exp-date-input"]{
-    float: left;
-  }
-  label[for='cvc-input']{
-    margin-left: 10px;
-    float: left;
-  }
-
-  #info-submit{
+   #continue-button{
     margin: 25px 0;
     width: 100%;
     height: 50px;
@@ -155,13 +113,7 @@ input[type='submit']{
     transition: background-color 300ms ease;
   }
 
-  .info-form>label>input:focus, .info-form>label>input:active{
-    color: black;
-    outline: none;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
-    border-radius: 5px;
-  }
+ 
 
   .check-mark{
     display: flex;
@@ -253,55 +205,14 @@ input[type='submit']{
     font-size: 12px;
   }
 
-  .info-form-container {
-    width: 67%;
-    height: 100vh;
-  }
-
-  .info-form,.completed-body{
+  
+  .completed-body{
     width: calc(100% - 200px);
     margin: 150px 0 0 175px;
 
   }
-  .info-form>label{
-    font-size: 12px;
-    color:hsl(278, 68%, 11%);
-    font-weight: 800;
-    margin-bottom: 20px;
-  }
-  .info-form>label>input {
-    font-size: 15px;
-    font-weight: 700;
-    color: hsl(270, 3%, 87%);
-    border-radius: 5px;
-    border: 1px solid hsl(270, 3%, 87%);
-    height: 50px;
-    margin-top: 10px;
-  }
-  #cardholder-input, #card-number-input{
-    width: 100%;
-    margin: 5px 0;
-    padding-left: 15px;
-  }
-  #exp-date-month-input, #exp-date-year-input {
-    width: 80px;
-    padding: 0 0 0 15px;  
-    margin: 5px 10px 0 0;
-  }
-  #cvc-input{
-    max-width: 100%;
-    width: calc((1440 / 275) * 100%);
-    padding-left: 23px;
-    margin: 5px 0 0 0;
-  }
-  label[for="exp-date-input"]{
-    float: left;
-  }
-  label[for='cvc-input']{
-    margin-left: 0;
-    float: left;
-  }
-  #info-submit{
+  
+  #continue-button{
     margin: 25px 0;
     width: 100%;
     height: 50px;
@@ -313,13 +224,7 @@ input[type='submit']{
     font-weight: 600;
     transition: background-color 300ms ease;
   }
-  .info-form>label>input:focus, .info-form>label>input:active{
-    color: black;
-    outline: none;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
-    border-radius: 5px;
-  }
+  
 
   .check-mark{
     display: flex;
@@ -417,53 +322,16 @@ input[type='submit']{
     height: 100vh;
   }
 
-  .info-form, .completed-body {
+   .completed-body {
     width: calc(100% - 500px);
     margin: 200px 150px 0 350px;
     max-width: 500px;
   }
-  .info-form>label{
-    font-size: 15px;
-    color:hsl(278, 68%, 11%);
-    font-weight: 800;
-    margin-bottom: 20px;
-  }
-  .info-form>label>input {
-    font-size: 18px;
-    font-weight: 700;
-    color: hsl(270, 3%, 87%);
-    border-radius: 5px;
-    border: 1px solid hsl(270, 3%, 87%);
-    height: 50px;
-    margin-top: 10px;
-  }
-  #cardholder-input, #card-number-input{
-    width: 100%;
-    margin: 5px 0;
-    padding-left: 15px;
-  }
-  #exp-date-month-input, #exp-date-year-input {
-    width: 80px;
-    padding: 0 0 0 15px;  
-    margin: 5px 10px 0 0;
-  }
-  #cvc-input{
-    max-width: 100%;
-    width: calc((1440 / 275) * 100%);
-    padding-left: 23px;
-    margin: 5px 0 0 0;
-  }
-  label[for="exp-date-input"]{
-    float: left;
-  }
-  label[for='cvc-input']{
-    margin-left: 0;
-    float: left;
-  }
-  #info-submit{
+  
+  #continue-button{
     margin: 25px 0;
     width: 100%;
-    height: 50px; 
+    height: 50px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     border: 1px solid hsl(278, 68%, 11%);
@@ -472,13 +340,7 @@ input[type='submit']{
     font-weight: 600;
     transition: background-color 300ms ease;
   }
-  .info-form>label>input:focus, .info-form>label>input:active{
-    color: black;
-    outline: none;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
-    border-radius: 5px;
-  }
+  
 
   .check-mark{
     display: flex;
@@ -498,9 +360,7 @@ input[type='submit']{
   }
 }
 
-#info-submit:hover{
+#continue-button:hover, #continue-button:active {
   background-color: hsl(270, 3%, 87%);
   color: hsl(278, 68%, 11%)
 }
-
-
